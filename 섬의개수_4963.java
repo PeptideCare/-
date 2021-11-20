@@ -41,7 +41,7 @@ public class 섬의개수_4963 {
                     }
                 }
             }
-
+            System.out.println(count);
         }
     }
 
