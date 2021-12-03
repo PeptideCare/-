@@ -14,8 +14,6 @@ public class TwoDots_16929 {
     static char startC;
     static char [][] map;
     static boolean [][] visited;
-    static int dx [] = {0, 1, 0, -1};
-    static int dy [] = {1, 0, -1, 0};
     static String ans = "No";
 
     public static void main(String[] args) throws IOException {
@@ -42,13 +40,6 @@ public class TwoDots_16929 {
                 dfs(i,j, 0);
             }
 
-            int count = 0;
-            for (int j=0; j<4; j++) {
-                int a = startX + dx[i];
-                int b = startY + dy[i];
-
-                if (visited[a][b])
-            }
         }
 
         System.out.println(ans);
@@ -57,6 +48,11 @@ public class TwoDots_16929 {
     static void dfs(int x, int y, int depth) {
 
         if (x<0 || y<0 || x>N-1 || y>M-1) {
+            return;
+        }
+
+        if (map[x][y] == startC && startX == x && startY == y && depth >= 4) {
+            ans = "Yes";
             return;
         }
 
