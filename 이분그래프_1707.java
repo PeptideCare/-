@@ -1,4 +1,4 @@
-package com.cote;
+package com.boj;
 
 import java.util.ArrayList;
 import java.util.List;

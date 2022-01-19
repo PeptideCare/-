@@ -1,4 +1,4 @@
-package com.cote;
+package com.boj;
 
 
 import java.io.BufferedReader;
